@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reagan</title>
+  <link rel="stylesheet" href="index.css">
+  <script src="https://kit.fontawesome.com/6c1a2a7a21.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+<div class="container">
+  <nav>
+    <img src="./logo.png" width="200" alt="">
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Services</a></li>
+      <li><a href="#">Portfolio</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="header-text">
+    <p>Software developer</p>
+    <H1>Hi, I'm <span>Reagan</span> <br> Gachanja from Nairobi,Kenya</H1>
+  </div>
+</div>
+<!-- <div id="header"></div> -->
+ <!-- --------------about----------------- -->
+ <div id="about">
+  <div class="container">
+    <div class="row"> <!-- Changed to class -->
+      <div class="about-col-1"> <!-- Changed to class -->
+        <img src="./rigi g (1).png" width="300" alt="">
+      </div>
+      <div class="about-col-2"> <!-- Changed to class -->
+        <h1 class="sub-title">About Me</h1>
+        <p>I am a dedicated software developer and system analyst with a passion for crafting innovative solutions. With expertise in web development, system design, and user-centered functionality, I focus on creating responsive, efficient, and scalable applications. My skills in problem-solving and analysis drive me to deliver seamless digital experiences tailored to meet both business and user needs.</p>
+        <div class="tab-titles">
+          <p class="tab-links active-link" onclick="openTab(event, 'skills')">Skills</p>
+          <p class="tab-links" onclick="openTab(event, 'experience')">Experience</p>
+          <p class="tab-links" onclick="openTab(event, 'education')">Education</p>
+        </div>
+
+        <div class="tab-contents active" id="skills">
+          <ul>
+            <li><span>Web Development</span><br>HTML/CSS, JavaScript, Database Management</li>
+            <li><span>System Analyst</span><br>Requirements Gathering, Project Management, Testing and Evaluation</li>
+            <li><span>App Development</span><br>Requirements Gathering, Project Management, Testing and Evaluation</li>
+          </ul>
+        </div>
+
+        <div class="tab-contents" id="experience">
+          <ul>
+            <li><span>Current - 2024</span><br>Web Development at Shield Organization</li>
+            <li><span>2024 - 2025</span><br>System Analyst at Shield Organization</li>
+            <li><span>2024 - 2025</span><br>App Development at Shield Organization</li>
+          </ul>
+        </div>
+
+        <div class="tab-contents" id="education">
+          <ul>
+            <li><span>2024</span><br>HTML/CSS, JavaScript, Database Management at Shield Organization</li>
+            <li><span>2024 - 2025</span><br>Requirements Gathering, Project Management, Testing and Evaluation at Shield Organization</li>
+            <li><span>2025</span><br>Requirements Gathering, Project Management, Testing and Evaluation at Shield Organization</li>
+          </ul>
+        </div>
+
+        <!-- ----------------services------------------- -->
+
+         <div id="services">
+          <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+              <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Web design</h2>
+                <P>I create stunning, user-friendly websites tailored to your needs, enhancing brand identity and improving user experience through responsive design, intuitive navigation, and modern aesthetics.</P>
+                <a href="#">Learn More</a>
+                </div>
+
+                <div>
+                  <i class="fa-solid fa-crop"></i>
+                <h2>System Analyst</h2>
+                <P>As a System Analyst, I specialize in requirements gathering, project management, and evaluation to optimize systems, enhance efficiency, and ensure successful project outcomes for organizations.</P>
+                <a href="#">Learn More</a>
+              </div>
+
+              <div>
+                <i class="fa-brands fa-app-store"></i>
+               <h2>project Management</h2>
+                <P>I provide comprehensive project management services, ensuring timely delivery, efficient resource allocation, and effective communication to achieve project goals and drive team success.</P>
+                <a href="#">Learn More</a>
+              </div>
+            </div>
+          </div>
+         </div>
+
+         <!-- -----------------portfolio---------------- -->
+          <div id="portfolio">
+            <div class="container">
+              <h1 class="sub-title">My Work</h1>
+              <div class="worklist">
+                <div class="work">
+                  <img src="Reagan.png" alt="">
+                  <div class="layer">
+                    <h3>Web Dev</h3>
+                    <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. , error voluptas recusandae quasi necessitatibus natus cum alias deserunt debitis maxime rem culpa?</P>
+                    <i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i>
+                  </div>
+                </div>
+
+                <div class="work">
+                  <img src="Reagan.png" alt="">
+                  <div class="layer">
+                    <h3>Web Dev</h3>
+                    <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. , error voluptas recusandae quasi necessitatibus natus cum alias deserunt debitis maxime rem culpa?</P>
+                    <i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i>
+                </div>
+
+                <div class="work">
+                  <img src="Reagan.png" alt="">
+                  <div class="layer">
+                    <h3>Web Dev</h3>
+                    <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. , error voluptas recusandae quasi necessitatibus natus cum alias deserunt debitis maxime rem culpa?</P>
+                    <i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        <script>
+          var tabLinks = document.getElementsByClassName("tab-links");
+          var tabContents = document.getElementsByClassName("tab-contents");
+
+          function openTab(event, tabName) {
+
+            Array.from(tabLinks).forEach(link => link.classList.remove("active-link"));
+            Array.from(tabContents).forEach(content => content.classList.remove("active"));
+
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabName).classList.add("active");
+          }
+        </script>
+
+
+
+
+</body>
+</html>
